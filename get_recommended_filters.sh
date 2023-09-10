@@ -4,13 +4,10 @@ source "$(dirname "$0")/helpers.sh"
 
 # declare an array of urls
 urls=(
-  https://raw.githubusercontent.com/mullvad/dns-blocklists/main/output/doh/doh_adblock.txt
-  https://raw.githubusercontent.com/mullvad/dns-blocklists/main/output/doh/doh_gambling.txt
+  https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts
+  https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
+  https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/multi.txt
   https://raw.githubusercontent.com/mullvad/dns-blocklists/main/output/doh/doh_privacy.txt
-  https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts
-  https://adaway.org/hosts.txt
-  https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
-  https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/domain.txt
 )
 
 # download all files in parallel and append them to input.csv
